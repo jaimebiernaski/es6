@@ -1,0 +1,26 @@
+Section 01 - Overview
+
+How to take this course:
+
+- Use the console from the Google Chrome Browser
+- Use the JS Playground: https://stephengrider.github.io/JSPlaygrounds/
+- Babeljs.io: https://babeljs.io/repl
+
+
+ES6 - ECMAScript version 6
+
+ECMAScript is a scripting language standard. 
+Javascript is a implementation of that standand.
+ES6 is a version of Javascript based on ECMAScript 2015.
+
+In general: ES6 Code -> Babel(transpiler) -> ES5 Code (to safely run in a browser)
+
+
+Other infos:
+
+"use strict"
+1. This indicates Javascript should run on strict mode, which eliminates some 
+javascript silent errors by changing them to throw errors, for example using
+a non-declared variable.
+2. The scrict mode fixes mistakes that make it difficult for JavaScript engines  
+to perform optimizations. 
