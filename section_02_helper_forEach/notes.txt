@@ -1,0 +1,33 @@
+**** HELPERS - forEach ****
+
+forEach element of and array, do
+
+Why to user helpers instead of for loops? 
+There is a lot of different ways the forloop can go wrong!
+typing erros, ; , arguments, etc
+Helpers keep the loop simpler.
+
+forEach: is and interator function that runs over all elements 
+of an array.
+
+arr.forEach(callback(currentValue [, index [, array]])[, thisArg])
+
+Parameters
+
+callback
+    Function to execute on each element. 
+    It accepts between one and three arguments:
+
+	* currentValue
+            The current element being processed in the array.
+        * index | Optional
+            The index currentValue in the array.
+        * array | Optional
+            The array forEach() was called upon.
+        * thisArg | Optional
+            Value to use as this when executing callback.
+
+    Return value
+        undefined.
+
+
