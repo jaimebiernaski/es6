@@ -1,0 +1,39 @@
+**** HELPER - filter ****
+
+Syntax
+
+let newArray = arr.filter(callback(element[, index, [array]])[, thisArg])
+
+Parameters
+    callback
+        Function is a predicate, to test each element of the array. 
+        Return true to keep the element, false otherwise.
+
+It accepts three arguments:
+
+    element
+        The current element being processed in the array.
+    index | Optional
+        The index of the current element being processed in the array.
+    array | Optional
+        The array filter was called upon.
+
+thisArg | Optional
+    Value to use as this when executing callback.
+
+Return value
+    A new array with the elements that pass the test. 
+    If no elements pass the test, an empty array will be returned.
+
+
+********** NOTES
+
+- Filters keep the immutability!
+
+- Does not use it statment to return boolean value. Just return the element.
+        ...
+        return option === 'my option' // this returns boolean
+        ...
+
+
+
