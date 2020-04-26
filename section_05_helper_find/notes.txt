@@ -1,0 +1,31 @@
+**** HELPER - find ****
+
+Syntax
+
+    arr.find(callback(element[, index[, array]])[, thisArg])
+
+Parameters
+    
+    callback
+        Function to execute on each value in the array, taking 3 arguments:
+        
+        element
+            The current element in the array.
+
+        index Optional
+            The index (position) of the current element in the array.
+
+        array Optional
+            The array that find was called on.
+
+    thisArg Optional
+        Object to use as this inside callback.
+
+Return value
+
+    The value of the first element in the array that satisfies 
+    the provided testing function. Otherwise, undefined is returned.
+
+********** NOTES
+
+
