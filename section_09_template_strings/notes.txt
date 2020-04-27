@@ -1,0 +1,24 @@
+**** TEMPLATE STRINGS ****
+
+The Template Literal, introduced in ES6, is a new way to create a string. 
+With it comes new features that allow us more control over dynamic strings 
+in our programs. Gone will be the days of long string concatenation!
+
+To create a template literal, instead of single quotes (') or double quotes (") quotes 
+we use the backtick (`) character. 
+This will produce a new string, and we can use it in any way we want.
+
+Basic usage:
+
+let newString = `A string`;
+
+Multi-line
+
+    let myMultiString= `This will be
+    on two lines!`;
+
+Expressions
+
+    let name = `Ryan`;
+    console.log(`Hi my name is ${name}`);
+
