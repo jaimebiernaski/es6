@@ -53,4 +53,8 @@ Return value
     true if the callback function returns a truthy value for every array element. 
     Otherwise, false.
 
+***** NOTES
 
+Real use for SOME and EVERY
+
+- Login Forms
