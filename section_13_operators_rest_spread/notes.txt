@@ -1,0 +1,63 @@
+**** REST OPERATOR ****
+
+The rest parameter syntax allows us to represent an 
+indefinite number of arguments as an array.
+
+
+Syntax
+
+function f(a, b, ...theArgs) {
+  // ...
+}
+
+Example
+
+    In this example, the first argument is mapped to a and the second to b, so these named arguments are used like normal.
+    However, the third argument, manyMoreArgs, will be an array that contains the 3rd, 4th, 5th, 6th ... nth — as many arguments that the user includes.
+
+    function myFun(a, b, ...manyMoreArgs) {
+      console.log("a", a)
+      console.log("b", b)
+      console.log("manyMoreArgs", manyMoreArgs)
+    }
+
+    myFun("one", "two", "three", "four", "five", "six")
+
+    // a, one
+    // b, two
+    // manyMoreArgs, [three, four, five, six]
+
+
+**** SPREAD OPERATOR ****
+
+Spread syntax allows an iterable such as an array expression or string 
+to be expanded in places where zero or more arguments (for function calls) 
+or elements (for array literals) are expected, or an object expression 
+to be expanded in places where zero or more key-value pairs (for object 
+literals) are expected.
+
+Syntax
+
+  For function calls:
+      myFunction(...iterableObj);
+
+  For array literals or strings:
+      [...iterableObj, '4', 'five', 6];
+
+  For object literals (new in ECMAScript 2018):
+      let objClone = { ...obj };
+
+
+Example
+
+    function sum(x, y, z) {
+      return x + y + z;
+    }
+
+    const numbers = [1, 2, 3];
+
+    console.log(sum(...numbers));
+    // expected output: 6
+
+    console.log(sum.apply(null, numbers));
+    // expected output: 6
