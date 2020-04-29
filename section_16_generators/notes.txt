@@ -1,0 +1,43 @@
+**** GENERATOR ****
+
+The Generator object is returned by a generator function and it
+0conforms to both the iterable protocol and the iterator protocol.
+
+Properties
+    Also inherits properties from: Iterator
+
+    Generator.prototype.constructor
+      Specifies the function that creates an object's prototype.
+
+    Generator.prototype[@@toStringTag]
+      The string "Generator".
+
+Methods
+    Also inherits methods from: Iterator
+
+    Generator.prototype.next()
+      Returns a value yielded by the yield expression.
+
+    Generator.prototype.return()
+      Returns the given value and finishes the generator.
+
+    Generator.prototype.throw()
+      Throws an error to a generator (also finishes the generator, unless caught from within that generator).
+
+
+1. What is a generator?
+
+    is a function that can entered and exit multiple times.
+    We can run some code, return a value, and we go right back into 
+    the function at the same place that we left it.
+
+2. What does a generator do?
+
+  stops the execution of a function on yelds fields
+     
+
+3. Interactions with generators
+
+4. Generator delegation
+
+5. Generatirs with Symbol.interator
